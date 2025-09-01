@@ -1,0 +1,16 @@
+{
+  "name": "web3-ux-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bundle exec jekyll serve --livereload",
+    "build": "bundle exec jekyll build",
+    "build-css": "tailwindcss -i ./assets/css/main.css -o ./_site/assets/css/main.css --watch",
+    "deploy-ipfs": "node scripts/deploy-ipfs.js"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "@tailwindcss/typography": "^0.5.0"
+  }
+}

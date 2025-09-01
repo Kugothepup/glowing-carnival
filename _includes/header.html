@@ -1,0 +1,23 @@
+<header class="bg-white dark:bg-gray-800 shadow-sm">
+    <nav class="max-w-6xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <a href="{{ '/' | relative_url }}" class="text-xl font-bold">
+                {{ site.title }}
+                {% if site.ens_domain %}
+                <span class="text-web3-purple ml-2 font-mono text-sm">{{ site.ens_domain }}</span>
+                {% endif %}
+            </a>
+            
+            <div class="flex items-center gap-6">
+                <a href="{{ '/projects' | relative_url }}" class="hover:text-web3-purple transition-colors">Projects</a>
+                <a href="{{ '/about' | relative_url }}" class="hover:text-web3-purple transition-colors">About</a>
+                <a href="{{ '/contact' | relative_url }}" class="hover:text-web3-purple transition-colors">Contact</a>
+                
+                <!-- Web3 Connect Button -->
+                <button id="connectWallet" class="btn-web3 text-sm">
+                    Connect Wallet
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>

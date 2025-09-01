@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-web3 {
+    @apply bg-gradient-to-r from-web3-purple to-web3-blue text-white px-6 py-3 rounded-lg font-medium hover:scale-105 transition-transform;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow;
+  }
+  
+  .wallet-address {
+    @apply font-mono text-sm bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded;
+  }
+}

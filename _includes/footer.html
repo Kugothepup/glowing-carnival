@@ -1,0 +1,18 @@
+<footer class="bg-gray-800 text-white py-12 mt-20">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                {% if site.social.twitter %}
+                <a href="https://twitter.com/{{ site.social.twitter }}" class="hover:text-web3-purple transition-colors">Twitter</a>
+                {% endif %}
+                {% if site.social.linkedin %}
+                <a href="https://linkedin.com/in/{{ site.social.linkedin }}" class="hover:text-web3-purple transition-colors">LinkedIn</a>
+                {% endif %}
+                {% if site.social.github %}
+                <a href="https://github.com/{{ site.social.github }}" class="hover:text-web3-purple transition-colors">GitHub</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</footer>
